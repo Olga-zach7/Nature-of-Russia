@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body, p, header, footer {
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #F4EBBE;
+    color: #6E6949;
+}
+
+/* стили шапки */
+
+header {
+    background-color: #CACC90;
+    height: 110px;
+}
+
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 100px;
+    width: 25%;
+}
+
+.logo img {
+    height: 110px;
+    display: inline-block;
+}
+
+.logo p {
+    display: inline-block;
+    background-color: #CACC90;
+    color: #000;
+    position: absolute;
+    top: 43px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item { 
+    display: inline-block;
+    padding: 30px;
+    padding-top: 43px;   
+}
+
+.nav-link {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.btn {
+    position: absolute;
+    top: 43px;
+    right: 70px;
+}
+
+.btn-link {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #6E6949;
+    color: #F4EBBE;
+    text-decoration: none;
+}
+
+/*стили main*/
+
+.banner {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-image: url("../assets/banner1.jpg");
+    background-size: cover;
+}
+
+.banner p {
+    color: #fff;
+    font-size: 60px;
+    padding-top: 165px;
+}
+
+#our-trips, #lessons, #feedback {
+    margin: 25px 0px 15px 0px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    padding: 7px;
+    flex-basis: 200px;
+    height: 500px;
+    background-color: #CACC90;
+    border-radius: 10px;
+    text-align: left; 
+}
+
+.card img {
+    width: 350px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-title {
+    padding: 15px 0 0 10px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.little {
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px 0 20px 10px;
+    font-weight: 500;
+}
+
+.card-btn {
+    background-color: #6E6949;
+    margin: 10px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: #F4EBBE;
+    text-decoration: none;
+}
+
+.more {
+    padding: 10px;
+    margin: 25px;
+}
+
+.more-link {
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #6E6949;
+    text-decoration: none;
+    outline: #6E6949 solid 2px;
+}
+
+#lessons {
+    background-color: #CACC90;
+    padding: 25px 0px;
+}
+
+#lessons h2 {
+    margin-top: 0;
+}
+
+#lessons .more {
+    margin-bottom: 0;
+}
+
+.lesson {
+    background-color: #F4EBBE;
+}
+
+#feedback h2{
+    margin: 20px;
+    font-size: 40px;
+}
+
+.feed-card {
+    background-color: #CACC90;
+    padding: 15px;
+    padding-top: 20px;
+    flex-basis: 350px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    outline: #6E6949 solid 2px;
+}
+
+.comment {
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 25px;
+}
+
+.pers {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.feed-card img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+    align-items: flex-start;
+}
+
+.feed-card .name {
+    flex-grow: 1;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* стили подвала */
+
+footer {
+    background-color: #CACC90;
+    color: #000;
+    height: 260px;
+    text-align: center;
+    padding: 5px;
+}
+
+.flogo {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    height: 80px;
+}
+
+.flogo p{
+    display: inline-block;
+    align-self: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.flogo img{
+    height: 80px;
+}
+
+.ftext p {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/*media*/
+
+@media(max-width: 1366px) {
+    .logo p {
+        font-size: 18px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .nav-item {
+        padding: 20px;
+        padding-top: 43px;
+    }
+}
+
+@media(max-width: 1024px) {
+    header {
+        height: 90px;
+    }
+    .logo img {
+        height: 90px;
+    }
+    .logo p {
+        position: absolute;
+        top: 36px;
+    }
+    .nav-link {
+        font-size: 14px;
+    }
+    .logo{
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        height: 90px;
+        width: 25%;
+    }
+    .nav-item {
+        padding-top: 36px;
+        margin-left: 0px;
+    }
+    .btn {
+        position: absolute;
+        top: 36px;
+        right: 70px;
+    }
+    .btn-link {
+        padding: 8px 13px;
+    }
+    .banner p {
+        font-size: 40px;
+        padding-top: 155px;
+    }
+}
+
+@media(max-width: 920px) {
+    header {
+        height: 110px;
+    }
+    .logo img {
+        height: 85px;
+    }
+    .logo p {
+        display: block;
+        font-size: 15px;
+        position: absolute;
+        top: 55px;
+    }
+    .logo{
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        width: 90px;
+    }
+    .nav-item {
+        padding: 20px;
+        padding-top: 43px;
+    }
+    .btn {
+        position: absolute;
+        top: 43px;
+        right: 20px;
+    }
+    .card-container {
+        gap: 20px;
+    }
+    .card {
+        height: 365px;
+    }
+    .card img {
+        width: 220px;
+        height: 240px;
+    }
+    .feed-card {
+        padding: 15px;
+        padding-top: 20px;
+        flex-basis: 250px;
+        height: 220px;
+        border-radius: 10px;
+    }
+    .comment {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        height: 150px;
+        text-align: center;
+    }
+    .logo img {
+        height: 80px;
+    }
+    .logo p {
+        display: inline;
+        font-size: 18px;
+        position: absolute;
+        top: 36px;
+    }
+    .nav {
+        position: absolute;
+        top: 80px;
+    }
+    .nav-link {
+        display: inline-block;
+        
+        font-size: 16px;
+    }
+    .logo{
+        text-align: left;
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        height: 90px;
+        width: 70%;
+    }
+    .nav-item {
+        padding: 10px;
+        margin-left: 0px;
+    }
+    .btn {
+        position: absolute;
+        top: 36px;
+        right: 10px;
+    }
+    .btn-link {
+        font-size: 14px;
+        padding: 6px 11px;
+    }
+    .flogo {
+        height: 50px;
+    }
+    .flogo img{
+        height: 50px;
+    }
+    .flogo p{
+        font-size: 16px;
+    }
+    .ftext p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .banner {
+        height: 350px;
+    }
+    .banner p {
+        font-size: 28px;
+        padding-top: 160px;
+    }
+    #feedback h2{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 350px) {
+    header {
+        height: 125px;
+    }
+    .logo img {
+        height: 65px;
+    }
+    .logo p {
+        font-size: 12px;
+        position: absolute;
+        top: 30px;
+    }
+    .nav {
+        position: absolute;
+        top: 65px;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+    .logo{
+        width: 65%;
+    }
+    .btn {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+    .btn-link {
+        font-size: 12px;
+    }
+    .banner {
+        height: 300px;
+    }
+    .banner p {
+        font-size: 20px;
+        padding-top: 120px;
+    }
+    .more {
+        margin: 15px;
+    }
+    .more-link {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .comment {
+        font-size: 14px;
+    }
+    #feedback h2{
+        font-size: 26px;
+    }
+    .feed-card {
+        padding: 10px;
+        padding-top: 20px;
+        height: 230px;
+    }
+}
+
+/*активные элементы*/
+
+.nav-link:hover {
+    color: #6E6949;
+    transition: color 0.2s;
+}
+
+.btn-link:hover, .card-btn:hover {
+    background-color: #CACC90;
+    outline: #6E6949 solid 2px;
+    color: #6E6949;
+    transition: all 0.2s;
+}
+
+.btn:active{
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.card-btn-less:hover {
+    background-color: #F4EBBE;
+    outline: #6E6949 solid 2px;
+    color: #6E6949;
+    transition: all 0.2s;
+}
+
+.more-link:hover {
+    background-color: #CACC90;
+    transition: background-color 0.2s;
+}
+
+.more-link-less:hover {
+    background-color: #F4EBBE;
+    transition: background-color 0.2s;
+}
+
+.more:active{
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    outline: #6E6949 solid 2px;
+    transition: outline 0.2s;
+}
